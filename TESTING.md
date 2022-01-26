@@ -42,13 +42,15 @@ With test-driven development (TDD), developers create and automate tests that va
 ### Unit Testing
 
 Unit testing is a level of software testing where individual units/components of a software are tested. In the React world this means testing an individual React Component or pure functions.
- 
- #### What To Test?
+
+#### What To Test?
 
 1. The first unit test of each component should be if it's render without crashing.
 
-2. The second unit test of a component should be if it contains the right information once it is loaded. 
+2. The second unit test of a component should be if it contains the right information once it is loaded.
+    * You should look for specific strings or patterns.
+    * Or look for things like the placeholder text of an input or a test id.
+    * All of this is done in my case via [Testing Library React](https://testing-library.com/docs/react-testing-library/intro).
 
-⋅⋅⋅You can have properly io it you should look for specific strings or patterns.
-
-...Or look for 
+3. The third unit test of a component should be if the component React properly to an user interaction.
+    * For example if we click a button that 

@@ -53,4 +53,23 @@ Unit testing is a level of software testing where individual units/components of
     * All of this is done in my case via [Testing Library React](https://testing-library.com/docs/react-testing-library/intro).
 
 3. The third unit test of a component should be if the component React properly to an user interaction.
-    * For example if we click a button that 
+    * For example if we click a button that should make a popup to show on display test that the component is present in the tree after click the button, not before. (This sometimes is more an integration test than a unit test and the line that separate them is not always clear).
+
+### Integration Testing
+
+Integration tests serve a critical place in your testing plan by providing a balance between the speed of unit tests and the “real world” interactions of an end-to-end test.
+
+### What To Test?
+
+Here are some of the things React developers want to do when writing integration tests:
+
+* Test application use-cases from the user’s perspective. Users access information on a web page and interact with available controls.
+* Mock API calls to not depend on API availability and state for passing/failing tests.
+* Mock browser APIs (for example, local storage) since they simply do not exist in test environment.
+* Assert on React DOM state (browser DOM or a native mobile environment).
+
+Now, for some things we should try to avoid when writing React app integration tests:
+
+* Test implementation details. Implementation changes should only break a test if they indeed introduced a bug.
+* Mock too much. We want to test how all the parts of the app are working together.
+* Shallow render. We want to test the composition of all the components in the app down to the smallest component.

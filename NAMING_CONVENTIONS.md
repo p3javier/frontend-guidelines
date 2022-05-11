@@ -4,6 +4,8 @@ Following standard naming conventions increases readability and makes it easier 
 
 In this article, I will discuss 10  [JavaScript](https://en.wikipedia.org/wiki/JavaScript)  naming convention best practices you should follow.
 
+## [LINK TO THE ARTICLE](https://medium.com/syncfusion/10-javascript-naming-conventions-every-developer-should-know-f99b35eb00b6) 
+
 # 1. Naming Convention for Variables
 
 JavaScript variable names are case-sensitive. Lowercase and uppercase letters are distinct. For example, you can define three unique variables to store a dog name, as follows.
